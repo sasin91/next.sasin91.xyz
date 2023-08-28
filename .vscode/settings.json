@@ -1,0 +1,14 @@
+{
+    "i18n-ally.localesPaths": "src/app/i18n/locales",
+    "i18n-ally.enabledParsers": [
+        "json"
+    ],
+    "i18n-ally.enabledFrameworks": [
+        "react",
+        "react-i18next",
+        "i18next"
+    ],
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.displayLanguage": "da",
+    "i18n-ally.sourceLanguage": "da"
+}
