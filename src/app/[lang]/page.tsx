@@ -212,7 +212,7 @@ function HeroSection({ lang }: { lang: Lng }) {
               ))}
             </div>
           </div>
-          <AdvancedImage cldImg={logo} plugins={[responsive(), placeholder(), lazyload()]} className="w-auto h-8" />
+          <AdvancedImage cldImg={logo} plugins={[responsive(), placeholder(), lazyload()]} class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
         </div>
       </div>
       <div className="absolute inset-x-0 bottom-0 h-24 -z-10 bg-gradient-to-t from-white sm:h-32" />
