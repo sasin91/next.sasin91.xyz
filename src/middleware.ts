@@ -1,8 +1,8 @@
 import { NextResponse, NextRequest } from 'next/server'
 import acceptLanguage from 'accept-language'
-import { fallbackLng, languages, cookieName } from './app/i18n/settings'
+import { fallbackLng, languages, cookieName, Lng } from './app/i18n/settings'
 
-acceptLanguage.languages(languages)
+acceptLanguage.languages(languages as unknown as string[])
 
 export const config = {
   // matcher: '/:lng*'
@@ -11,7 +11,7 @@ export const config = {
 
 export function middleware(req: NextRequest) {
   if (req.nextUrl.pathname.indexOf('icon') > -1 || req.nextUrl.pathname.indexOf('chrome') > -1) return NextResponse.next()
-  let lng: string;
+  let lng: string | undefined = undefined;
 
   if (req.cookies.has(cookieName)) {
     const cookie = req.cookies.get(cookieName)!;

@@ -3,12 +3,13 @@ import type { Metadata } from 'next'
 import { Figtree } from 'next/font/google'
 import { cn } from '~/lib/utils'
 import { useTranslation } from '~/app/i18n'
+import { Lng } from '~/app/i18n/settings'
 
 const Font = Figtree({ subsets: ['latin'] })
 
 type Props = {
   children: React.ReactNode,
-  params: { lang: 'en' | 'da' }
+  params: { lang: Lng }
 }
 
 export async function generateMetadata(
