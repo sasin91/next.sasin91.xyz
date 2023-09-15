@@ -104,5 +104,10 @@
     "thanks": "Tuside tak for beskeden.",
     "i_be_back": "Jeg vender tilbage hurtigst.",
     "close": "Luk vinduet"
+  },
+  "form": {
+    "errors": {
+      "required": "{label} er krævet"
+    }
   }
 }

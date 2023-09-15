@@ -103,5 +103,10 @@
     "headline": "Your inquiry has been received.",
     "i_be_back": "I will return as soon as possible.",
     "close": "close the window"
+  },
+  "form": {
+    "errors": {
+      "required": "{label} required"
+    }
   }
 }
