@@ -15,6 +15,8 @@ type Props = {
 export async function generateMetadata(
   { params }: Props,
 ): Promise<Metadata> {
+  // This is Next JS specific.
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(params.lang)
   
   return {
