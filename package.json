@@ -35,7 +35,7 @@
     "i18next-resources-to-backend": "^1.1.4",
     "lucide-react": "^0.269.0",
     "negotiator": "^0.6.3",
-    "next": "13.4.19",
+    "next": "^13.5.1",
     "postcss": "8.4.28",
     "postgres": "^3.3.5",
     "react": "18.2.0",

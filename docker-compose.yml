@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: ./
+    volumes:
+      - .:/app
+    command: bun dev
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+      CLOUDINARY_CLOUD_NAME: sasin91
+      DB_URL: postgres://postgres:postgres/app
+      NEXT_TELEMETRY_DISABLED: 0
+    networks:
+      - sasin91
+
+  # Add more containers below (nginx, postgres, etc.)
+  postgresql:
+    image: postgres
+    ports:
+      - 5432:5432
+    networks:
+      - sasin91
+
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
+networks:
+  sasin91:
+    driver: bridge
