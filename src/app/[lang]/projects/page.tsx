@@ -8,7 +8,7 @@ import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMe
 import Grid from "~/components/ui/grid";
 import { Separator } from "~/components/ui/separator";
 
-export function DemoGithub() {
+function DemoGithub() {
     return (
         <Card>
             <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
